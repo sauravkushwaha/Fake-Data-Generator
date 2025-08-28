@@ -14,7 +14,7 @@ Mini assignment project
 - Faker API
 
 ## 🚀 Live Demo
-[Click here](https://<your-vercel>.vercel.app)
+[Click here](https://fake-data-generator-by-saurav.vercel.app/)
 
 ## 📂 Repository.
 data-generator/
