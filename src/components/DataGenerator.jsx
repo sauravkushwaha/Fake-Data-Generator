@@ -1,3 +1,6 @@
+/* Fake Data Generator (Assignment)
+stack: React(vite) + HTML, CSS + Faker API
+   Author: Saurav Kushwaha */
 
 import { useState } from "react";
 
