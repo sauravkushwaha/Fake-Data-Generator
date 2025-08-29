@@ -17,6 +17,7 @@ Mini assignment project
 [Click here](https://fake-data-generator-by-saurav.vercel.app/)
 
 ## 📂 Repository.
+```
 data-generator/
 ├─ public/
 │  ├─ fake.png
@@ -37,6 +38,6 @@ data-generator/
 ├─ package.json
 ├─ README.md
 └─ vite.config.js
-
+```
 
 
