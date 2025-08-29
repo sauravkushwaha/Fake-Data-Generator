@@ -1,10 +1,12 @@
+
 import { useState } from "react";
 
 export default function DataGenerator() {
-  const [count, setCount] = useState(10);
-  const [rows, setRows] = useState([]);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState("");
+  // === UI State ===
+  const [count, setCount] = useState(10); // number of records to request
+  const [rows, setRows] = useState([]); // table rows [{id, name, email, phone}]
+  const [loading, setLoading] = useState(false); // disable actions during fetch
+  const [error, setError] = useState(""); // simple user-facing error message
 
   async function generate() {
     setError("");
@@ -23,12 +25,15 @@ export default function DataGenerator() {
       }));
       setRows(mapped);
     } catch (e) {
+      //error message 
       setError("Failed to fetch data. Try again.");
+      // console.error(e);
     } finally {
+      // Always End loading state (success or failure)
       setLoading(false);
     }
   }
-
+// Clears table and error text
   function clearAll() {
     setRows([]);
     setError("");
